@@ -52,11 +52,21 @@
         #refundBtn:hover {
             background-color: #bb0000;
         }
+        .info {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Управление Stars</h2>
+        <div class="info">
+            💝 Отправьте подарок (сердечко) за 15 Stars - просто напишите "сердечко" в чате с ботом
+        </div>
         <input type="number" id="starsAmount" min="1" max="100" placeholder="Введите количество (1-100)">
         <button onclick="addStars()">Пополнить баланс</button>
         <button id="refundBtn" onclick="refundStars()">Вернуть Stars</button>
